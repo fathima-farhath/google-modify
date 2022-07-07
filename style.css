@@ -1,0 +1,247 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+#clock{
+    position:absolute;
+    top:0;
+    color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#clock #time{
+    display: flex;
+    justify-content: center;
+}
+#clock #time div{
+    position: relative;
+    margin: 0 5px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,#0002);
+}
+#clock #time div span{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background:#c552cf;
+  
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#clock #time div:last-child span{
+    background:#e4f30d;
+}
+
+body{
+    position:relative;
+    height: 100vh;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background: linear-gradient(to bottom, rgb(237, 107, 241),rgb(217, 173, 235),#f5aaf1,rgb(243, 190, 248) ); 
+}
+.total
+{    position:relative;
+     height: 100vh;
+     width: 100%;
+}
+.header{
+    width: 100%;
+    height: 3rem;
+    position: relative;
+    
+}
+.links{
+   padding: 10px;
+   font-size: 15px;
+   display: flex;
+   position: absolute;
+   right: 0;
+}
+
+a{
+    padding-top: 7px;
+    text-decoration: none;
+    color:#fff;
+    margin: 0 10px;
+    cursor: pointer;
+}
+a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+    
+}
+
+.search #hid{
+    display: none;
+}
+.txt{
+    padding-top: 10px;
+}
+.txt:hover{
+    border-radius: 10px;
+    border:1px solid rgb(216, 35, 120);
+    width: 55px;
+    
+ background-color: rgb(216, 35, 120);
+}
+.mainbody{
+    width: 100%;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   position: relative;
+   
+}
+
+.contents{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   position: relative;
+   justify-content: center;
+}
+.app{
+    margin-left: 20px;
+    border: 1px solid;
+    border-radius: 5px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   border: hidden;
+   transition: .5s;
+}
+.menu{
+    display: flex;
+    position: relative;
+}
+
+.app:hover{
+    cursor: pointer;
+    background: rgb(216, 35, 120);
+    transform: translatey(-10px);
+}
+
+.image img{
+    margin-top: 20%;
+    border: 1px solid #fff;
+    border-radius: 50px;
+   height: 120px;
+   width: 400px;
+   border: transparent;
+}
+.search{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    width: 45vw;
+   background:#fff;
+    border: 1px solid lightgray;
+    border-radius: 999px;
+    padding: 7px;
+    box-shadow: 0 0 20px 0rgba(7, 149, 243, 0.3);
+}
+
+.search input{
+    flex: 1;
+     border:white;
+     outline: hidden;
+    margin: 0 15px;
+    font-size: 15px;
+}
+
+.buttons{
+   margin: 25px;
+}
+.btn{
+    padding: 15px;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 5px;
+    background: transparent;
+    border: hidden;
+    transition: transform .3s ease
+}
+.btn:hover{
+   
+    cursor: pointer;
+    transform: scale(1.1); 
+    box-shadow: 10px 5px 5px rgb(159, 245, 192);
+}
+.apps{
+    padding-top: 10px;
+    border: 1px solid;
+    border-radius: 5px;
+    height: 45px;
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   border: hidden;
+   background: rgb(255, 255, 255);
+}
+.back-frem{
+   text-align: center;
+   width: 18rem;
+  height: 3rem;
+   background:rgb(255, 255, 255);
+   border-radius: 23px;
+  margin: 0 auto;
+   display: flex;
+   justify-content:space-around;
+   align-items: center;
+}
+.back-frem .back-change{
+    padding: 5px;
+    width: 91px;
+    height: 71px;
+    background: wheet;
+    overflow: hidden;
+
+    flex: 1;
+}
+.back-frem .back-change img{
+    border-radius: 23px;
+   cursor: pointer;
+    padding: 5px 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.botom h1{
+font-size: 20px;
+color: rgb(255, 255, 255);
+font-family: monospace;
+font-weight: bold;
+}
+
+@media only screen and (max-width: 650px){
+ .search{
+     width: 75%;
+ }
+ .ctn{
+    display:none;
+ }
+ .mainbody{
+    margin-top: 30px;
+ }
+ .search input{
+     margin-left: 5px;
+ font-size: 14px;
+ }
+ .image img{
+  width: 225px;
+ }
+ .search #hid{
+    display: contents;
+}
+#ti{
+    display: none;
+}
+}
